@@ -1,8 +1,8 @@
 module.exports = {
   apps: [
     {
-      name: 'API',
-      script: 'app.js',
+      name: 'sensorAmbrosio',
+      script: '.',
 
       // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
       args: 'one two',
@@ -24,8 +24,8 @@ module.exports = {
       user: 'pi',
       host: '192.168.0.170',
       ref: 'origin/master',
-      repo: 'git@github.com:repo.git',
-      path: '/var/www/production',
+      repo: 'git@github.com:davidbeijinho/sensor-core-ambrosio.git',
+      path: '/home/pi/sensor-ambrosio/production',
       'post-deploy':
         'npm install && pm2 reload ecosystem.config.js --env production',
     },

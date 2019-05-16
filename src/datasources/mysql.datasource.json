@@ -4,7 +4,7 @@
   "url": "",
   "host": "localhost",
   "port": 3306,
-  "user": "localpi",
-  "password": "",
+  "user": "pimysql",
+  "password": "newpassword",
   "database": "sensor-ambrosio"
 }
